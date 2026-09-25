@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de" id="html">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>visualsbyginger. – Auto-, Motorrad- und Tierfotografie</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Auto-, Motorrad-, Tier- und Produktfotografie aus Aschaffenburg und Frankfurt. Shootings mit Charakter von Lea – visualsbyginger.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="visualsbyginger.">
+<meta property="og:title" content="visualsbyginger. – Auto-, Motorrad- und Tierfotografie">
+<meta property="og:description" content="Auto-, Motorrad-, Tier- und Produktfotografie aus Aschaffenburg und Frankfurt.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%231D1F21%27/%3E%3Cpath d=%27M14 20L26 44L38 20%27 fill=%27none%27 stroke=%27%23fff%27 stroke-width=%277%27/%3E%3Ccircle cx=%2747%27 cy=%2742%27 r=%274.5%27 fill=%27%23F27C42%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@700;800&display=swap">
+<style>
+:root{--bg:#FFFFFF;--ink:#1D1F21;--muted:#5E6266;--line:#DEE0E1;--accent:#F27C42;--gap:14px;--px:4vw;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1D1F21;--ink:#F4F4F2;--muted:#9BA0A4;--line:#36393C}}
+:root[data-theme="dark"]{--bg:#1D1F21;--ink:#F4F4F2;--muted:#9BA0A4;--line:#36393C}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;font-size:17px;overflow-x:hidden}
+h1,h2,.sy{font-family:Syne,Inter,system-ui,sans-serif;font-weight:800}
+a{color:inherit}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+header{position:fixed;top:0;left:0;right:0;z-index:20;padding:calc(14px + env(safe-area-inset-top,0px)) var(--px) 14px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.mk{font-family:Syne,sans-serif;font-weight:800;font-size:2.1rem;text-decoration:none;line-height:1;color:var(--ink);transition:letter-spacing .35s;display:inline-block}
+.mk:hover{letter-spacing:.06em}
+.mk i{color:var(--accent);font-style:normal;display:inline-block;transition:transform .35s}
+.mk:hover i{transform:translateY(-6px)}
+nav a{margin:0 18px;text-decoration:none;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:6px 0;background:linear-gradient(var(--accent),var(--accent)) 0 100%/0 2px no-repeat;transition:background-size .3s,color .3s}
+nav a:hover{color:var(--ink);background-size:100% 2px}
+#th{justify-self:end;background:none;border:0;color:var(--ink);cursor:pointer;width:40px;height:40px;display:grid;place-items:center;border-radius:50%}
+#th:hover{color:var(--accent)}#th svg{transition:transform .5s}#th:hover svg{transform:rotate(90deg)}
+.hero{position:relative;height:100vh;height:100svh;min-height:600px;overflow:hidden;background:#141617;color:#fff}
+.cols{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);padding:0 var(--px)}
+.strip{display:flex;flex-direction:column;animation:up var(--d) linear infinite;will-change:transform}
+.strip.dn{animation-name:dn}
+.strip img{width:100%;height:auto;display:block;margin-bottom:var(--gap);filter:brightness(.5);transition:filter .6s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.strip:hover{animation-play-state:paused}
+.strip img:hover{filter:brightness(1.05);transform:scale(1.04)}
+@keyframes up{to{transform:translateY(-50%)}}@keyframes dn{from{transform:translateY(-50%)}to{transform:none}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(#14161799,#14161700 30%,#14161700 60%,#141617cc)}
+.wm,.hi{pointer-events:none}
+.wm span{display:inline-block;padding-right:.06em}
+.wm{position:absolute;z-index:2;left:0;right:0;top:50%;text-align:center;font-size:7vw;line-height:1;letter-spacing:-.035em;white-space:nowrap;margin:0;transform:translate3d(0,calc(-50% + var(--sy,0)*.2px),0);opacity:calc(1 - var(--sy,0)/650);text-shadow:0 4px 40px #0008}
+.wm b{color:var(--accent);font-weight:800}
+.hi{position:absolute;z-index:2;left:var(--px);right:var(--px);bottom:32px;display:flex;justify-content:space-between;gap:16px;font-size:.95rem;color:#ffffffcc}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:22px 0;white-space:nowrap}
+.mq div{display:inline-block;animation:mq 110s linear infinite;font-size:clamp(2rem,6vw,5.5rem);line-height:1.1}
+.mq b{color:var(--accent);margin-right:.5em;font-weight:800}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:96px var(--px)}
+.top{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+h2{font-size:clamp(2rem,4.5vw,3.6rem);line-height:1.05;margin:0;letter-spacing:-.02em}
+.filters{display:flex;gap:10px;flex-wrap:wrap}
+.filters button{font:inherit;font-size:.9rem;padding:8px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:background .25s,border-color .25s,transform .25s}
+.filters button:hover{border-color:var(--accent);transform:translateY(-3px)}
+.filters button[aria-pressed="true"]{background:var(--accent);color:#1D1F21;border-color:var(--accent);font-weight:500}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:var(--gap)}
+.gallery button{position:relative;display:block;width:100%;aspect-ratio:4/5;padding:0;margin:0;border:0;background:#0002;border-radius:3px;cursor:none;overflow:hidden;opacity:0;transform:translateY(36px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.gallery button.in{opacity:1;transform:none}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gallery button::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+.gallery button:hover::after,.gallery button:focus-visible::after{transform:scaleX(1)}
+.gallery button:hover img{transform:scale(1.07)}
+.gallery button:hover{box-shadow:0 20px 44px #0007}
+.gallery:hover button.in:not(:hover){opacity:.5}
+
+.gallery:hover button:not(:hover) img{filter:saturate(.6)}
+.gallery span{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;font-size:.85rem;color:#fff;text-align:left;background:linear-gradient(#0000,#000a);opacity:0;transform:translateY(8px);transition:.35s}
+.gallery button:hover span,.gallery button:focus-visible span{opacity:1;transform:none}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:6vw;border-top:1px solid var(--line)}
+.about h2{margin-bottom:28px}.about p{max-width:60ch;margin:0 0 1em;color:var(--muted)}
+.mq div{transition:color .3s}.mq:hover div{animation-play-state:paused}
+.list{list-style:none;padding:0;margin:0;text-align:right}
+.list li{padding:20px 0;border-bottom:1px solid var(--line);display:flex;justify-content:flex-end;align-items:baseline;gap:16px;font-family:Syne,sans-serif;font-weight:700;font-size:1.25rem;transition:padding .3s}
+.list li:hover{padding-right:16px;border-color:var(--accent);color:var(--accent)}
+.list span{font-family:Inter,sans-serif;font-weight:400;font-size:.95rem;color:var(--muted)}
+.list .li-name{font:inherit;color:inherit}
+.ct{border-top:1px solid var(--line);text-align:center}
+.ct p{color:var(--muted);margin:0 0 20px}
+.mail{display:inline-block;max-width:100%;font-family:Syne,sans-serif;font-weight:800;font-size:clamp(1.15rem,5vw,3.4rem);line-height:1.15;letter-spacing:-.02em;text-decoration:none;word-break:break-word;overflow-wrap:anywhere;background:linear-gradient(var(--accent),var(--accent)) 0 100%/0 .08em no-repeat;transition:background-size .5s,color .3s}
+.mail:hover{background-size:100% .08em;color:var(--accent)}
+footer a{text-decoration:none;background:linear-gradient(var(--accent),var(--accent)) 0 100%/0 2px no-repeat;transition:background-size .3s,color .3s}
+footer a:hover{background-size:100% 2px;color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:28px var(--px) 40px;color:var(--muted);font-size:.9rem;display:flex;gap:22px;flex-wrap:wrap}
+dialog{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100%;height:100%}
+dialog::backdrop{background:rgba(5,8,9,.94)}
+.lb{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:16px;gap:12px;color:#fff}
+.lb img{max-width:100%;max-height:calc(100% - 70px);object-fit:contain}
+.lb p{margin:0;font-size:.95rem;color:#C9D3D2;text-align:center}
+.lb button{position:absolute;background:#ffffff24;color:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:1.3rem;cursor:pointer}
+.lb .x{top:calc(12px + env(safe-area-inset-top,0px));right:16px}.lb .pv,.lb .nx{top:50%;transform:translateY(-50%)}.lb .pv{left:12px}.lb .nx{right:12px}
+@media (max-width:820px){header{grid-template-columns:auto 1fr auto}nav{text-align:center}nav a{margin:0 8px}.cols{grid-template-columns:1fr 1fr}.cols .strip:nth-child(n+3){display:none}.about{grid-template-columns:1fr;gap:40px}section{padding:64px var(--px)}}
+@media (max-width:480px){nav a:first-child{display:none}.hi span:last-child{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.strip,.mq div{animation:none}.gallery button{opacity:1;transform:none}.wm{transform:translateY(-50%);opacity:1}}
+
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:14px;padding:14px 28px;border-radius:999px;background:var(--accent);color:#1D1F21;text-decoration:none;font-family:Syne,sans-serif;font-weight:700;transition:transform .3s,box-shadow .3s}
+.btn span{display:inline-block;transition:transform .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px #f27c4266}.btn:hover span{transform:translate(4px,-4px)}
+.ct{background:linear-gradient(160deg,#F9A56B 0%,#F27C42 45%,#E9582B 100%);color:#1D1F21;padding:130px var(--px);border-top:0}
+.ct p{color:#1D1F21;font-size:1.1rem}
+.ct .mail{color:#1D1F21;background-image:linear-gradient(#1D1F21,#1D1F21)}.ct .mail:hover{color:#1D1F21}
+footer{background:#1D1F21;color:#B9BDC0;border-top:6px solid;border-image:linear-gradient(90deg,#F27C42 0 25%,#4FC9BF 25% 50%,#F2C14E 50% 75%,#D8412F 75% 100%) 1}
+footer a:hover{color:#fff}
+.pill{display:inline-block;padding:1px 14px;margin:2px 0;border:1.5px solid var(--accent);border-radius:999px;color:var(--ink);text-decoration:none;font-family:Syne,sans-serif;font-weight:700;font-size:.95em;line-height:1.55;background:linear-gradient(var(--accent),var(--accent)) 0 100%/100% 0 no-repeat;transition:background-size .35s,color .35s,transform .3s}
+.pill:hover{background-size:100% 100%;color:#1D1F21;transform:translateY(-2px)}
+.mw{text-align:center;margin-top:36px}.btn[hidden],#more[hidden]{display:none}
+#loader{position:fixed;inset:0;z-index:999;background:var(--bg);display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s}
+#loader span{font-size:6.4vw;letter-spacing:-.02em;display:inline-block}
+#loader .ch{display:inline-block;opacity:0;transform:translateY(22px) scale(.92);filter:blur(6px);animation:chIn .7s forwards cubic-bezier(.16,.9,.2,1)}
+#loader b{color:var(--accent)}
+@keyframes chIn{to{opacity:1;transform:none;filter:blur(0)}}
+#loader.hide{opacity:0;visibility:hidden}
+body.loading{overflow:hidden}
+.cursor{position:fixed;top:0;left:0;width:12px;height:12px;border-radius:50%;background:var(--accent);pointer-events:none;z-index:60;transform:translate(-50%,-50%);transition:width .28s,height .28s,background .28s,opacity .2s;opacity:0}
+.cursor .lbl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:Syne,sans-serif;font-weight:700;font-size:.72rem;color:#1D1F21;opacity:0;transition:opacity .2s}
+.cursor.on{opacity:1}
+.cursor.big{width:78px;height:78px;background:#fff}
+.cursor.big .lbl{opacity:1}
+@media (pointer:coarse){.cursor{display:none}}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+blockquote{margin:0;padding:26px 24px;border:1px solid var(--line);border-radius:6px;transition:border-color .3s,transform .3s}
+blockquote:hover{border-color:var(--accent);transform:translateY(-4px)}
+blockquote p{margin:0 0 14px;font-family:Syne,sans-serif;font-weight:700;font-size:1.05rem;line-height:1.4}
+blockquote cite{color:var(--muted);font-style:normal;font-size:.9rem}
+.hact{justify-self:end;display:flex;align-items:center;gap:6px}
+#lg{font:inherit;font-family:Syne,sans-serif;font-weight:700;font-size:.85rem;background:none;border:1.5px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;transition:border-color .25s,color .25s}
+#lg:hover{border-color:var(--accent);color:var(--accent)}
+</style>
+</head>
+<body class="loading">
+<div id="loader" aria-hidden="true"><span class="sy" id="ldtxt"></span></div>
+<header>
+  <a class="mk" href="#top" aria-label="visualsbyginger, nach oben">V<i>.</i></a>
+  <nav><a href="#work" data-i18n="nav_work">Work</a><a href="#ueber-mich" data-i18n="nav_about">Über mich</a><a href="#kontakt" data-i18n="nav_contact">Kontakt</a></nav>
+  <div class="hact"><button id="lg" type="button" aria-label="Sprache wechseln">EN</button>
+  <button id="th" type="button" aria-label="Hell oder dunkel wechseln"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button></div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="cols" id="cols" aria-hidden="true"></div>
+    <h1 class="wm sy"><span id="wt">visuals<b>by</b>ginger<b>.</b></span></h1>
+    <div class="hi"><span data-i18n="hi1">Hi, ich bin Lea</span><span data-i18n="hi2">Fotografie aus Aschaffenburg und Frankfurt</span></div>
+  </div>
+
+  <div class="mq sy" aria-hidden="true"><div id="mq"></div></div>
+
+  <section id="work">
+    <div class="top"><h2 data-i18n="work_h">Work</h2><div class="filters" role="group" aria-label="Kategorie wählen"></div></div>
+    <div class="gallery" id="gallery"></div>
+    <div class="mw"><button type="button" id="more" class="btn" hidden data-i18n="more">Mehr sehen</button></div>
+  </section>
+
+  <section id="ueber-mich" class="about">
+    <div>
+      <h2 data-i18n="about_h">Motive mit Charakter.</h2>
+      <p data-i18n="about_p1">Hi, ich bin Lea, 23 Jahre alt und frisch gebackene Absolventin in Marketing und Digitale Medien. Seit 2019 gestalte ich nebenbei Content und führe privat meinen Motorrad-Account <a class="pill" href="https://www.instagram.com/bikelifeofginger/?hl=de" target="_blank" rel="noopener noreferrer">Bikelifeofginger</a>.</p>
+      <p data-i18n="about_p2">Mit der Zeit blieb dafür immer weniger Raum, aber jetzt starte ich wieder durch. Mit visualsbyginger. halte ich Motive fest, die Charakter haben: Autos, Motorräder, Hunde und Produkte. Das Leben stellt einem immer wieder neue Hürden in den Weg, und am Ende findet man den richtigen Weg.</p>
+    </div>
+    <ul class="list">
+      <li><span class="li-name" data-i18n="li1">Fahrzeug-Shooting</span> <span data-i18n="onreq">auf Anfrage</span></li>
+      <li><span class="li-name" data-i18n="li2">Tierporträt</span> <span data-i18n="onreq2">auf Anfrage</span></li>
+      <li><span class="li-name" data-i18n="li3">Produktfotos</span> <span data-i18n="onreq3">auf Anfrage</span></li>
+    </ul>
+  </section>
+
+  <section id="kontakt" class="ct">
+    <p data-i18n="ct_p">Was soll vor die Kamera? Schreib mir kurz, wann und wo.</p>
+    <a class="mail" href="mailto:info@visualsbyginger.de?subject=Shooting-Anfrage">info@visualsbyginger.de</a>
+  </section>
+</main>
+
+<footer><a href="#" data-i18n="imp">Impressum</a><a href="#" data-i18n="dat">Datenschutz</a><span>© visualsbyginger.</span></footer>
+
+<div class="cursor" id="cur"><span class="lbl">Ansehen</span></div>
+<dialog id="lb" aria-label="Bildansicht"><div class="lb">
+  <button type="button" class="x" id="cl" aria-label="Schließen">✕</button>
+  <button type="button" class="pv" aria-label="Vorheriges Bild">‹</button>
+  <img id="li" alt=""><p id="lc"></p>
+  <button type="button" class="nx" aria-label="Nächstes Bild">›</button>
+</div></dialog>
+
+<script>
+const ITEMS=[{"c": "Autos", "a": "Audi Kombi auf einer Landstraße im Abendlicht", "w": 533, "h": 800, "s": "bilder/vbg-01-800.webp", "l": "bilder/vbg-01.webp"}, {"c": "Autos", "a": "Silberner Audi vor herbstlichen Bäumen", "w": 533, "h": 800, "s": "bilder/vbg-02-800.webp", "l": "bilder/vbg-02.webp"}, {"c": "Autos", "a": "Schwarzer Audi A3 am Wasser vor einer Villa", "w": 533, "h": 800, "s": "bilder/vbg-03-800.webp", "l": "bilder/vbg-03.webp"}, {"c": "Autos", "a": "Rückleuchte im Detail, Nahaufnahme", "w": 533, "h": 800, "s": "bilder/vbg-04-800.webp", "l": "bilder/vbg-04.webp"}, {"c": "Autos", "a": "Türkiser Mini in einer orangen Halle", "w": 622, "h": 800, "s": "bilder/vbg-05-800.webp", "l": "bilder/vbg-05.webp"}, {"c": "Autos", "a": "Rad eines türkisen Mini, Nahaufnahme", "w": 622, "h": 800, "s": "bilder/vbg-06-800.webp", "l": "bilder/vbg-06.webp"}, {"c": "Autos", "a": "Dachspoiler eines türkisen Mini im Detail", "w": 622, "h": 800, "s": "bilder/vbg-07-800.webp", "l": "bilder/vbg-07.webp"}, {"c": "Autos", "a": "Türkiser Mini mit schwarzen Dekorstreifen, Seitenansicht", "w": 622, "h": 800, "s": "bilder/vbg-08-800.webp", "l": "bilder/vbg-08.webp"}, {"c": "Autos", "a": "Weißer Audi R8 bei Nacht auf dem Parkplatz", "w": 535, "h": 800, "s": "bilder/vbg-09-800.webp", "l": "bilder/vbg-09.webp"}, {"c": "Autos", "a": "Audi R8 von hinten bei Nacht", "w": 535, "h": 800, "s": "bilder/vbg-10-800.webp", "l": "bilder/vbg-10.webp"}, {"c": "Autos", "a": "Roter Audi RS3 mit Spiegelung in der Pfütze", "w": 533, "h": 800, "s": "bilder/vbg-11-800.webp", "l": "bilder/vbg-11.webp"}, {"c": "Autos", "a": "Roter Audi RS3 unter einer Brücke", "w": 533, "h": 800, "s": "bilder/vbg-12-800.webp", "l": "bilder/vbg-12.webp"}, {"c": "Autos", "a": "Gelber Abarth 500 im Gras", "w": 535, "h": 800, "s": "bilder/vbg-13-800.webp", "l": "bilder/vbg-13.webp"}, {"c": "Autos", "a": "Blauer VW Golf R32, Frontdetail", "w": 535, "h": 800, "s": "bilder/vbg-14-800.webp", "l": "bilder/vbg-14.webp"}, {"c": "Autos", "a": "Skoda Kamiq im Wald", "w": 533, "h": 800, "s": "bilder/vbg-15-800.webp", "l": "bilder/vbg-15.webp"}, {"c": "Motorräder", "a": "Fahrer mit weißer Suzuki GSX-R am Fluss", "w": 533, "h": 800, "s": "bilder/vbg-16-800.webp", "l": "bilder/vbg-16.webp"}, {"c": "Motorräder", "a": "Weiße Suzuki im Gegenlicht", "w": 533, "h": 800, "s": "bilder/vbg-17-800.webp", "l": "bilder/vbg-17.webp"}, {"c": "Motorräder", "a": "Fahrer auf weißer Suzuki, Blick zur Kamera", "w": 533, "h": 800, "s": "bilder/vbg-18-800.webp", "l": "bilder/vbg-18.webp"}, {"c": "Motorräder", "a": "Motorrad in einer Kurve auf der Landstraße", "w": 533, "h": 800, "s": "bilder/vbg-19-800.webp", "l": "bilder/vbg-19.webp"}, {"c": "Motorräder", "a": "Zwei Motorräder auf der Landstraße mit Aussicht", "w": 533, "h": 800, "s": "bilder/vbg-20-800.webp", "l": "bilder/vbg-20.webp"}, {"c": "Motorräder", "a": "Rot-schwarzer Helm auf dem Motorrad", "w": 533, "h": 800, "s": "bilder/vbg-21-800.webp", "l": "bilder/vbg-21.webp"}, {"c": "Motorräder", "a": "Kawasaki Schriftzug, Detailaufnahme", "w": 533, "h": 800, "s": "bilder/vbg-22-800.webp", "l": "bilder/vbg-22.webp"}, {"c": "Motorräder", "a": "Yamaha MT-07 im Wald", "w": 533, "h": 800, "s": "bilder/vbg-23-800.webp", "l": "bilder/vbg-23.webp"}, {"c": "Motorräder", "a": "Yamaha MT-07 auf einer Brücke im Gegenlicht", "w": 533, "h": 800, "s": "bilder/vbg-24-800.webp", "l": "bilder/vbg-24.webp"}, {"c": "Motorräder", "a": "Yamaha MT-07 vor See und Geländer", "w": 533, "h": 800, "s": "bilder/vbg-25-800.webp", "l": "bilder/vbg-25.webp"}, {"c": "Motorräder", "a": "BMW S 1000 R auf Kopfsteinpflaster", "w": 533, "h": 800, "s": "bilder/vbg-26-800.webp", "l": "bilder/vbg-26.webp"}, {"c": "Motorräder", "a": "Fahrer auf Yamaha MT-09 im Wald", "w": 513, "h": 800, "s": "bilder/vbg-27-800.webp", "l": "bilder/vbg-27.webp"}, {"c": "Motorräder", "a": "Yamaha MT-09 auf Kopfsteinpflaster", "w": 533, "h": 800, "s": "bilder/vbg-28-800.webp", "l": "bilder/vbg-28.webp"}, {"c": "Motorräder", "a": "Suzuki SV650 im Herbstwald", "w": 611, "h": 800, "s": "bilder/vbg-29-800.webp", "l": "bilder/vbg-29.webp"}, {"c": "Motorräder", "a": "Motorrad vor gelben Containern", "w": 600, "h": 800, "s": "bilder/vbg-30-800.webp", "l": "bilder/vbg-30.webp"}, {"c": "Motorräder", "a": "BMW S 1000 R im Sonnenlicht", "w": 533, "h": 800, "s": "bilder/vbg-31-800.webp", "l": "bilder/vbg-31.webp"}, {"c": "Motorräder", "a": "Kawasaki Z900 mit roten Felgen", "w": 533, "h": 800, "s": "bilder/vbg-32-800.webp", "l": "bilder/vbg-32.webp"}, {"c": "Motorräder", "a": "Öhlins Federbein im Detail", "w": 533, "h": 800, "s": "bilder/vbg-33-800.webp", "l": "bilder/vbg-33.webp"}, {"c": "Motorräder", "a": "Lenkerende mit Wassertropfen", "w": 533, "h": 800, "s": "bilder/vbg-34-800.webp", "l": "bilder/vbg-34.webp"}, {"c": "Tiere", "a": "Jack Russell Terrier am Strand", "w": 535, "h": 800, "s": "bilder/vbg-35-800.webp", "l": "bilder/vbg-35.webp"}, {"c": "Tiere", "a": "Hund liegt mit Ball im Sand", "w": 535, "h": 800, "s": "bilder/vbg-36-800.webp", "l": "bilder/vbg-36.webp"}, {"c": "Tiere", "a": "Jack Russell Terrier am Wasser", "w": 535, "h": 800, "s": "bilder/vbg-37-800.webp", "l": "bilder/vbg-37.webp"}, {"c": "Tiere", "a": "Magyar Vizsla im Lauf", "w": 533, "h": 800, "s": "bilder/vbg-38-800.webp", "l": "bilder/vbg-38.webp"}, {"c": "Tiere", "a": "Vizsla sitzt und blickt nach oben", "w": 619, "h": 800, "s": "bilder/vbg-39-800.webp", "l": "bilder/vbg-39.webp"}, {"c": "Tiere", "a": "Vizsla-Porträt auf einer Bank", "w": 533, "h": 800, "s": "bilder/vbg-40-800.webp", "l": "bilder/vbg-40.webp"}, {"c": "Tiere", "a": "Vizsla im Porträt, Blick nach oben", "w": 533, "h": 800, "s": "bilder/vbg-41-800.webp", "l": "bilder/vbg-41.webp"}, {"c": "Tiere", "a": "Vizsla im Profil mit Zunge", "w": 533, "h": 800, "s": "bilder/vbg-42-800.webp", "l": "bilder/vbg-42.webp"}, {"c": "Tiere", "a": "Katze im Schatten hinter Gräsern", "w": 533, "h": 800, "s": "bilder/vbg-43-800.webp", "l": "bilder/vbg-43.webp"}, {"c": "Porträt", "a": "DJ am Pult in einem Loft", "w": 605, "h": 800, "s": "bilder/vbg-44-800.webp", "l": "bilder/vbg-44.webp"}, {"c": "Porträt", "a": "DJ-Porträt mit Kopfhörern am Fenster", "w": 533, "h": 800, "s": "bilder/vbg-45-800.webp", "l": "bilder/vbg-45.webp"}, {"c": "Porträt", "a": "DJ am Mischpult", "w": 533, "h": 800, "s": "bilder/vbg-46-800.webp", "l": "bilder/vbg-46.webp"}, {"c": "Produkte", "a": "Handyhüllen und Halterungen als Produktstillleben", "w": 533, "h": 800, "s": "bilder/vbg-47-800.webp", "l": "bilder/vbg-47.webp"}, {"c": "Produkte", "a": "Handyhülle auf Holz, Produktfoto", "w": 533, "h": 800, "s": "bilder/vbg-48-800.webp", "l": "bilder/vbg-48.webp"}, {"c": "Produkte", "a": "Lenkerhalterung für Motorräder, Produktfoto", "w": 533, "h": 800, "s": "bilder/vbg-49-800.webp", "l": "bilder/vbg-49.webp"}];
+const ALT_EN=["Audi wagon on a country road at dusk", "Silver Audi in front of autumn trees", "Black Audi A3 by the water in front of a villa", "Tail light close-up", "Turquoise Mini in an orange hall", "Wheel of a turquoise Mini, close-up", "Roof spoiler of a turquoise Mini, detail", "Turquoise Mini with black decal stripes, side view", "White Audi R8 at night in a car park", "Audi R8 from behind at night", "Red Audi RS3 reflected in a puddle", "Red Audi RS3 under a bridge", "Yellow Abarth 500 in the grass", "Blue VW Golf R32, front detail", "Skoda Kamiq in the forest", "Rider with a white Suzuki GSX-R by the river", "White Suzuki against the light", "Rider on a white Suzuki, looking at the camera", "Motorbike cornering on a country road", "Two motorbikes on a country road with a view", "Red and black helmet on the motorbike", "Kawasaki lettering, close-up", "Yamaha MT-07 in the forest", "Yamaha MT-07 on a bridge against the light", "Yamaha MT-07 by a lake and railing", "BMW S 1000 R on cobblestones", "Rider on a Yamaha MT-09 in the forest", "Yamaha MT-09 on cobblestones", "Suzuki SV650 in an autumn forest", "Motorbike in front of yellow containers", "BMW S 1000 R in the sunlight", "Kawasaki Z900 with red rims", "Öhlins shock absorber, detail", "Handlebar end with water droplets", "Jack Russell Terrier on the beach", "Dog lying in the sand with a ball", "Jack Russell Terrier by the water", "Hungarian Vizsla running", "Vizsla sitting and looking up", "Vizsla portrait on a bench", "Vizsla portrait, looking up", "Vizsla in profile with tongue out", "Cat in the shade behind grasses", "DJ at the decks in a loft", "DJ portrait with headphones by the window", "DJ at the mixing desk", "Phone cases and mounts as a product still life", "Phone case on wood, product photo", "Motorbike handlebar mount, product photo"];
+ITEMS.forEach((it,i)=>{it.e=ALT_EN[i]||it.a});
+const $=s=>document.querySelector(s), root=document.documentElement;
+let lang=(()=>{try{return localStorage.getItem('lang')||'de'}catch(e){return 'de'}})();
+let cur='Alle',shown=[],idx=0;
+try{root.dataset.theme=localStorage.getItem('theme')||'dark'}catch(e){root.dataset.theme='dark'}
+$('#th').onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('theme',t)}catch(e){}};
+
+const durs=[240,300,270,330];
+for(let c=0;c<4;c++){
+  const part=ITEMS.filter((_,i)=>i%4===c), s=document.createElement('div');
+  s.className='strip'+(c%2?' dn':''); s.style.setProperty('--d',durs[c]+'s');
+  [...part,...part].forEach(it=>{const im=document.createElement('img');im.src=it.s;im.alt='';im.width=it.w;im.height=it.h;im.decoding='async';s.appendChild(im)});
+  $('#cols').appendChild(s);
+}
+function mqText(){const words=lang==='en'?['Cars','Motorbikes','Animals','Products']:['Autos','Motorräder','Tiere','Produkte'];$('#mq').innerHTML=[0,1].map(()=>words.map(w=>w+'<b>.</b>').join(' ')+' ').join(' ').repeat(2)}
+mqText();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -6% 0px'});
+const g=$('#gallery'),f=document.querySelector('.filters'),more=$('#more'),PAGE=16;
+const CATEN={Alle:'All',Autos:'Cars',Motorräder:'Motorbikes',Tiere:'Animals',Produkte:'Products',Porträt:'Portraits'};
+function catLabel(c){return lang==='en'?(CATEN[c]||c):c}
+const alt=it=>lang==='en'?it.e:it.a;
+function pool(){return cur==='Alle'?ITEMS:ITEMS.filter(i=>i.c===cur)}
+function colsNow(){const w=g.clientWidth||(g.parentElement&&g.parentElement.clientWidth)||1000,gap=14;return Math.max(1,Math.floor((w+gap)/(230+gap)))}
+let wantRows=3;
+function draw(){
+  const all=pool(), c=colsNow(); let n=Math.min(wantRows*c, all.length);
+  if(n<all.length){ n=Math.floor(n/c)*c; if(n===0) n=Math.min(c,all.length); }
+  shown=all.slice(0,n); g.innerHTML='';
+  shown.forEach((it,i)=>{
+    const b=document.createElement('button');b.type='button';b.setAttribute('aria-label',(lang==='en'?'Enlarge image: ':'Bild vergrößern: ')+alt(it));
+    b.style.transitionDelay=(i%4)*80+'ms';
+    const im=document.createElement('img');im.src=it.s;im.alt=alt(it);im.width=it.w;im.height=it.h;im.loading='lazy';
+    const sp=document.createElement('span');sp.textContent=alt(it);
+    b.append(im,sp);b.onclick=()=>open(i);g.appendChild(b);io.observe(b);
+  });
+  const left=all.length-shown.length; more.hidden=left<=0; more.textContent=(lang==='en'?'Show more (':'Mehr sehen (')+left+')';
+}
+function render(){wantRows=3;draw();f.querySelectorAll('button').forEach(x=>{x.setAttribute('aria-pressed',x.dataset.c===cur);x.textContent=catLabel(x.dataset.c)})}
+more.onclick=()=>{wantRows+=3;draw()};
+let rtick=false;
+addEventListener('resize',()=>{if(!rtick){rtick=true;requestAnimationFrame(()=>{draw();rtick=false})}});
+['Alle',...new Set(ITEMS.map(i=>i.c))].forEach(c=>{const b=document.createElement('button');b.type='button';b.textContent=catLabel(c);b.dataset.c=c;b.onclick=()=>{cur=c;render()};f.appendChild(b)});
+
+const lb=$('#lb'),li=$('#li'),lc=$('#lc');
+const show=()=>{const it=shown[idx];li.src=it.l||it.s;li.alt=alt(it);lc.textContent=alt(it)};
+function open(n){idx=n;show();lb.showModal()}
+const step=d=>{idx=(idx+d+shown.length)%shown.length;show()};
+$('#cl').onclick=()=>lb.close();lb.querySelector('.pv').onclick=()=>step(-1);lb.querySelector('.nx').onclick=()=>step(1);
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('lb'))lb.close()});
+lb.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
+
+const wm=$('.wm'),wt=$('#wt'),hero=$('.hero');
+function fit(){wm.style.fontSize='100px';const w=wt.getBoundingClientRect().width;wm.style.fontSize=Math.min(220,100*hero.clientWidth*.9/w)+'px'}
+fit();addEventListener('resize',fit);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+let tick=false;addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(()=>{root.style.setProperty('--sy',Math.min(scrollY,900));tick=false})}},{passive:true});
+render();
+
+// Ladeanimation
+const rmo=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function endLoad(){document.body.classList.remove('loading');const l=$('#loader');if(!l)return;l.classList.add('hide');setTimeout(()=>l.remove(),650)}
+let loadWait=1200;
+if(!rmo){
+  const parts=[['visuals',0],['by',1],['ginger',0],['.',1]]; const lt=$('#ldtxt'); let idx=0;
+  parts.forEach(([word,accent])=>{
+    const wrap=document.createElement(accent?'b':'span');
+    [...word].forEach(ch=>{const s=document.createElement('span');s.className='ch';s.textContent=ch;s.style.animationDelay=(idx*38)+'ms';idx++;wrap.appendChild(s)});
+    lt.appendChild(wrap);
+  });
+  loadWait=idx*38+700+350;
+}
+if(rmo){endLoad()}else{addEventListener('load',()=>setTimeout(endLoad,loadWait));setTimeout(endLoad,loadWait+900)}
+
+// Cursor-Effekt (nur bei Maus, nicht bei Touch)
+if(matchMedia('(pointer:fine)').matches){
+  const cur=$('#cur'); let cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;
+  addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;cur.classList.add('on')});
+  (function loop(){cx+=(tx-cx)*.22;cy+=(ty-cy)*.22;cur.style.transform=`translate(${cx}px,${cy}px) translate(-50%,-50%)`;requestAnimationFrame(loop)})();
+  document.addEventListener('pointerover',e=>{cur.classList.toggle('big',!!e.target.closest('.gallery button'))});
+  document.addEventListener('mouseleave',()=>cur.classList.remove('on'));
+}
+
+// Sprache DE / EN
+const I18N={
+ nav_work:{de:'Work',en:'Work'}, nav_about:{de:'Über mich',en:'About'}, nav_contact:{de:'Kontakt',en:'Contact'},
+ hi1:{de:'Hi, ich bin Lea',en:"Hi, I'm Lea"}, hi2:{de:'Fotografie aus Aschaffenburg und Frankfurt',en:'Photography from Aschaffenburg & Frankfurt, Germany'},
+ work_h:{de:'Work',en:'Work'}, more:{de:'Mehr sehen',en:'Show more'},
+ about_h:{de:'Motive mit Charakter.',en:'Subjects with character.'},
+ about_p1:{de:'Hi, ich bin Lea, 23 Jahre alt und frisch gebackene Absolventin in Marketing und Digitale Medien. Seit 2019 gestalte ich nebenbei Content und führe privat meinen Motorrad-Account <a class="pill" href="https://www.instagram.com/bikelifeofginger/?hl=de" target="_blank" rel="noopener noreferrer">Bikelifeofginger</a>.',
+   en:'Hi, I\'m Lea, 23, and a fresh graduate in Marketing and Digital Media. Since 2019 I\'ve been doing content design on the side and running my personal motorcycle account <a class="pill" href="https://www.instagram.com/bikelifeofginger/?hl=de" target="_blank" rel="noopener noreferrer">Bikelifeofginger</a>.'},
+ about_p2:{de:'Mit der Zeit blieb dafür immer weniger Raum, aber jetzt starte ich wieder durch. Mit visualsbyginger. halte ich Motive fest, die Charakter haben: Autos, Motorräder, Hunde und Produkte. Das Leben stellt einem immer wieder neue Hürden in den Weg, und am Ende findet man den richtigen Weg.',
+   en:'Over time there was less and less room for it, but now I\'m starting again. With visualsbyginger. I capture subjects with character: cars, motorbikes, dogs and products. Life keeps putting new hurdles in your way, and in the end you find the right path.'},
+ li1:{de:'Fahrzeug-Shooting',en:'Vehicle shoot'}, li2:{de:'Tierporträt',en:'Pet portrait'}, li3:{de:'Produktfotos',en:'Product photos'},
+ onreq:{de:'auf Anfrage',en:'on request'}, onreq2:{de:'auf Anfrage',en:'on request'}, onreq3:{de:'auf Anfrage',en:'on request'},
+ ct_p:{de:'Was soll vor die Kamera? Schreib mir kurz, wann und wo.',en:'What should I shoot? Send me a quick note on when and where.'},
+ imp:{de:'Impressum',en:'Legal notice'}, dat:{de:'Datenschutz',en:'Privacy'},
+};
+function applyLang(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n,v=I18N[k];if(v)el.innerHTML=v[lang]});
+  $('#html').lang=lang; $('#lg').textContent=lang==='de'?'EN':'DE';
+  $('#lg').setAttribute('aria-label',lang==='de'?'Switch to English':'Auf Deutsch wechseln');
+  const en=lang==='en';
+  document.title=en?'visualsbyginger. – Car, motorbike and pet photography':'visualsbyginger. – Auto-, Motorrad- und Tierfotografie';
+  $('#th').setAttribute('aria-label',en?'Toggle light or dark mode':'Hell oder dunkel wechseln');
+  $('.mk').setAttribute('aria-label',en?'visualsbyginger, back to top':'visualsbyginger, nach oben');
+  f.setAttribute('aria-label',en?'Choose category':'Kategorie wählen');
+  $('#lb').setAttribute('aria-label',en?'Image view':'Bildansicht');
+  $('#cl').setAttribute('aria-label',en?'Close':'Schließen');
+  lb.querySelector('.pv').setAttribute('aria-label',en?'Previous image':'Vorheriges Bild');
+  lb.querySelector('.nx').setAttribute('aria-label',en?'Next image':'Nächstes Bild');
+  $('#cur .lbl').textContent=en?'View':'Ansehen';
+  mqText();
+  render();
+  if(lb.open)show();
+}
+$('#lg').onclick=()=>{lang=lang==='de'?'en':'de';try{localStorage.setItem('lang',lang)}catch(e){}applyLang()};
+applyLang();
+</script>
+</body>
+</html>
